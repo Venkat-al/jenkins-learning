@@ -16,6 +16,9 @@ pipeline {
 
                 // Use the 'sh' step to execute shell commands
                 sh "${mavenHome}/bin/mvn clean package"
+
+                 // Use the 'sh' step to execute shell commands
+                sh "${mavenHome}/bin/mvn clean intsall"
             }
         }
 
